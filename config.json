@@ -1,0 +1,6 @@
+{
+  "TITLE_UI": "Minimal Web Browser",
+  "LOGO_PATH": "./data/img/logo.png",
+  "COLOR_UI": "#474E5E",
+  "SEARCH_ENGINE": "Google"
+}

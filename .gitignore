@@ -1,0 +1,8 @@
+# Ignore virtual enviroment
+/env
+
+# Ignore test directory
+/test
+
+# Ignore cache from python
+__pycache__
