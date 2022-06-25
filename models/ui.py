@@ -198,7 +198,7 @@ class UI():
             if url_content_list[0] == 'http' or url_content_list[0] == 'https':
                 url = url_content
             else:
-                url = 'https://www.duckduck.go.com/search?q=' + url_formated
+                url = 'https://www.duckduckgo.com/?q=' + url_formated
 
         return url
 
@@ -209,7 +209,7 @@ class UI():
         """
 
         # execptions handler in case of error
-        if url == 'https://wwww.google.com/search?q=' or url == 'https://www.duckduck.go.com/search?q=':
+        if url == 'https://wwww.google.com/search?q=' or url == 'https://www.duckduckgo.com/?q=':
             html_content = err.SEARCH_SOME_ERROR
         else:
             try:
@@ -222,8 +222,8 @@ class UI():
                 html_content = err.URL_INVALID
             except InvalidURL:
                 html_content = err.URL_INVALID
-            except ConnectionError:
-                html_content = err.CONNECTION_ERROR
+            # except ConnectionError:
+                # html_content = err.CONNECTION_ERROR
             except ConnectTimeout:
                 html_content = err.CONNECTION_TIMEOUT
 

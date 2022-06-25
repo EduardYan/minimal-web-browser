@@ -49,7 +49,7 @@ def get_valid_html(response:Request, url:str) -> str:
     # getting content_type
     content_type = response.headers['Content-Type']
 
-    # validating if the file is a image to retur
+    # validating if the file is a image to return
     if content_type == 'image/jpeg':
         html_content = LAYOUT_IMAGE.format(
             image_url = url
